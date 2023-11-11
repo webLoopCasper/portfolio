@@ -1,0 +1,161 @@
+---
+import IcontContainer from "../components/IcontContainer.astro";
+import "../styles/resetAndBasic.css";
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+		<title>Astro</title>
+	</head>
+	<body>
+		<div class="contact ">
+			<div class="xContainer">
+				<img class="x" src="img/x.svg" alt="">
+			</div>
+				
+			<div class="mainContent">
+				<ul>
+					<li>kontakt@casperbisgaard.dk</li>
+					<li>27 92 26 85</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<IcontContainer/>
+			</div>
+			
+			
+			
+		</div>
+		<button class="contactButton">
+			Kontakt mig
+		</button>
+		
+		<div class="wrapper ">
+			<slot/>
+		</div>
+		
+	</body>
+</html>
+
+
+
+<script>
+	
+	
+    const contactButton = document.querySelector(".contactButton");
+	const contactButton2 = document.querySelector(".contactButton2");
+    const contact = document.querySelector(".contact");
+	const blur = document.querySelector(".wrapper")
+	const x = document.querySelector(".x");
+	const body = document.querySelector("body");
+
+    contactButton.addEventListener("click",contactMe)
+	contactButton2.addEventListener("click",contactMe)
+    x.addEventListener("click",contactMe)
+
+	function contactMe(){
+		!contact.classList.value.includes("show")?contactButton.textContent="Luk kontakt form":contactButton.textContent="Kontakt mig";
+        contact.classList.toggle("show");
+		blur.classList.toggle("blur");
+		body.classList.toggle("overflow");
+	}
+
+</script>
+<style>
+	button{
+	position: fixed;
+	bottom:0;
+	background-color: var(--portYellow);
+	border: none;
+	width: 100vw;
+	height: 60px;
+	
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.25);
+	font-weight: bold;
+	z-index: 99;
+	}
+
+	@media (min-width: 800px) {
+        button{
+			border-radius:15px;
+			width: auto;
+			right: 40px;
+			bottom: 40px;
+			padding: 15px 60px;
+		}
+    }
+
+
+
+
+	.contact{
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+		max-width: 500px;
+		height: 300px;
+		z-index: 999999;
+        display: none;
+		border-radius: 25px;
+		border: 5px solid var(--portYellow);
+		font-size: 1.3rem;
+	}
+
+	
+	.logo{
+		display: flex;
+		justify-content: center;
+		margin-top: 40px;
+	}
+
+    .contact.show{
+        display: block;
+		z-index: 999;
+    }
+	.xContainer{
+		
+		display: flex;
+		justify-content: end;
+		border-radius: 25px;
+	}
+	.x{
+		width: 50px;
+	}
+	.mainContent{
+		display: flex;
+		justify-content: center;
+	}
+	.mainContent ul{
+		list-style: none;
+		text-align: center;
+	}
+	.mainContent li{
+		margin-bottom: 20px;
+	}
+
+	div{
+		background-color: white;
+	}
+	img{
+		width: 600px;
+	}
+	.blur{
+		filter: blur(25px);
+		
+	}
+	.overflow{
+		overflow-y: hidden;
+	}
+
+   
+</style>

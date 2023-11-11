@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --portYellow:#F0DB4F;
+    --portYellowHover:#f8dc26;
+    --portGrey:#f2f1f1;
+    
+
+
+    font-size: 14px;
+    color:#323330;
+}
+
+ 
+a{
+    color:#323330;
+}
+
+
+img{
+    width: 100%;
+}

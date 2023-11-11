@@ -1,0 +1,32 @@
+---
+import IcontContainer from "./IcontContainer.astro";
+
+---
+
+<footer>
+    <IcontContainer/>
+    <button class="contactButton2">Kontakt mig</button>
+
+</footer>
+
+
+
+<style>
+
+    footer{
+        flex-direction:column;
+        position: relative;
+        height: 120px;
+        background-color: var(--portYellow);
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        margin-top: 15px;
+        border: none;
+        background-color: var(--portYellow);
+        font-weight: bold;
+    }
+</style>

@@ -1,0 +1,84 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+
+---
+
+
+<div class="projectArea">
+    <div class="headlinecontainer">
+        <h2>- Mine projekter -</h2>
+    </div>
+    
+    <div class="projectcontainer">
+        <ProjectCard link="http://casperbisgaard.dk/likespil/spil.html" image="likespilletx.webp" button="Spil spillet">
+            <p class="strong">Like hunter spillet</p>
+            
+            <p>
+                I dette projekt havde vi fokus på css-animationer, og lærte på denne måde at skabe funktionalitet i et samarbejde mellem CSS og Javascript. Spillet går ud på at man skal klikke på de gode reaktioner og undgå de dårlige.
+            </p>
+        </ProjectCard>
+        <ProjectCard link="https://jantonycph.com/" image="jac.webp" button="Se side">
+            <p class="strong">J.Antony Copenhagen</p>
+            <p>
+                 J.Antony Copenhagen er en lille jakkesæts virksomhed, som spurgte mig om jeg ville hjælpe med dem med at opbygge en side i Wordpress. Det har lært mig en masse om hvordan CMS systemer fungere og har givet mig et indblik i PHP 
+            </p>
+        </ProjectCard>
+        <ProjectCard link="http://casperbisgaard.dk/to-do-app/index.html" image="toDoApp.webp" button="Se side">
+            <p class="strong">To Do Liste</p>
+            
+            <p>
+                Dette projekt handlede om at blive garvet til Javascript med forkus på localstorage og filter, Vi skulle lave en "To Do liste" hvor vi hvor vi skulle filtrere efter om opgaven var fuldført eller ej. "To Do listen" vil også blive bygget i REACT
+            </p>
+        </ProjectCard>
+        <ProjectCard link="https://sprightly-toffee-8640fd.netlify.app/" image="vmk.webp" button="Se side">
+            <p class="strong">Verdens mindste kulturhus</p>
+            <p>
+                I dette projekt skulle vi selv finde en virksomhed, og hjælpe dem med at opbygee en hjemmeside. Siden blev bygget i Astro, hvilket lærte en at kode i componenter. Derudover gik opgaven ud på at bruge en Database og API, her fik vi erfaring med Databasen supabase.
+            </p>
+        </ProjectCard>
+        
+        
+       
+    </div>
+</div>
+
+<style>
+    .projectArea{
+        background-color: var(--portGrey);
+        padding-bottom: 40px;
+    }
+    .headlinecontainer{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .projectArea h2{
+        font-size: 2rem;
+        background: linear-gradient(0deg, var(--portYellow) 0%, var(--portYellow) 40%, rgba(0,0,0,0) 40%);
+    }
+    .strong{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .projectcontainer{
+        max-width: 1100px;
+        margin-inline:auto;
+        padding-inline:20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        
+    }
+    @media (min-width: 650px) {
+        .projectcontainer{
+        
+        grid-template-columns: 1fr 1fr;
+        
+        
+    } 
+    }
+   
+
+</style>

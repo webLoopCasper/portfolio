@@ -1,0 +1,72 @@
+---
+
+
+---
+
+<div class="internshipContainer">
+    <div class="headlineContainer">
+        <h2>Praktik</h2>
+    </div>
+    <div class="internshipContent">
+        <div class="imgContainer">
+            
+            <img src="img/portimage.webp" alt="">
+           
+        </div>
+        <div class="textContainer">
+            <p class="strong">Om mig</p>
+           <p>Jeg studerer multimediedesign på KEA og er virkelig passioneret for front-end programmering. Faktisk synes jeg, det er så spændende, at jeg er begyndt at arbejde som tutor på KEA, hvor jeg hjælper mine medstuderende med deres kodningsproblemer. Derudover har jeg haft fornøjelsen af at arbejde sammen med forskellige start-ups på små projekter, synes det er utroligt spændende at se et projekt vokse og udvikle sig..</p> 
+           <p class="strong">Praktik ønsker</p>
+           <p> jeg ønsker at finde et praktiksted hvor begge parter får et stort udbytte af samarbejdet. Jeg ønsker at dygtiggøre mig så meget som muligt og er fast besluttet på at give mit bedste, og på den måde håber jeg på at vi kan få et godt samarbejde op at kører. Jeg er også åben for udvidelse af perioden, eller efter praktik at arbejde deltid, hvis i finder det belejligt.
+           </p> 
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .internshipContent{
+        max-width: 1100px;
+        margin-inline:auto;
+        padding-inline:20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-block: 40px;
+    }
+    @media (min-width: 800px) {
+        .internshipContent{
+        grid-template-columns: 1fr 2fr;
+        }
+    }
+    .imgContainer {
+        justify-self: center;
+    }
+    .internshipContent img {
+        max-width: 400px;
+     
+    }
+    .headlineContainer{
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .headlineContainer h2{
+        
+        font-size: 2rem;
+        background: linear-gradient(0deg, var(--portYellow) 0%, var(--portYellow) 40%, rgba(0,0,0,0) 40%);
+    }
+
+    .textContainer{
+        margin-top: 40px;
+    }
+    .strong{
+        font-weight: bold;
+    }
+
+    .strong:nth-child(3){
+        margin-top: 20px;
+    }
+
+</style>

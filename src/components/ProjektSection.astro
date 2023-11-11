@@ -1,0 +1,303 @@
+---
+import BoxTemplate from "../components/BoxTemplate.astro";
+---
+
+<div class="projektSection">
+    <h2>Min Udvikling</h2>
+    <div class="elementContainer">
+        <div class="">
+            <p>- Sprog -</p>
+            <div class="lang"></div>
+        </div>
+        <div class="">
+            <p>- Projekter -</p>
+            <div class="project">
+
+            </div>
+        </div>
+    </div>
+    <div class="boxContainer">
+        <div class="box red box1">
+            <p class="strong">CSS</p>
+            <p> Nævnværdige CSS færdigheder:</p>
+            <p> - Kunne placere elementer med flexbox og grid </p>
+            <p> - Skabe en responsiv hjemmeside </p>
+            <p> - Bruge CSS animationer til at skabe bevægelse </p>
+            <p> - Kunne bruge pseudo-elements til at indsætte content før og efter elementer </p>
+               
+        </div>
+        <div class="imgContainer box2">
+             <img src="/img/cssLogo.webp" alt="">
+        </div>
+        <div class="box blue box3">
+            <p class="strong">Like hunter spillet</p>
+            <p>For at lære at bruge CSS animationer skulle vi skabe et spil, dette blev starten på like hunter spillet!</p> 
+            <p>Spillet handler om at klikke på like og hjerte, men ungå de sure emojies</p>
+            <a href="">Klik her for at spille</a>
+        </div>
+        <div class="bgContainer bg1 box4">
+            
+        </div>
+        <!--  -->
+        <div class="box red box5">
+            <p class="strong">Wordpress</p>
+            <p>Wordpress er selvfølgelig ikke et sprog men et CMS system, men synes stadig den skulle nævnes!</p> 
+            <p>Har erfaring med opbygning af childthemes</p>
+            <p>Plugins jeg har arbejdet med: Woocommerce, Nets, Pixelyoursite, Elementor </p>
+
+        </div>
+        <div class="imgContainer box6">
+             <img src="/img/wpLogo.webp" alt="">
+        </div>
+        <div class="box blue box7">
+            <p class="strong">J.Antony Copenhagen</p>
+            <p>Jeg</p>
+        </div>
+        <div class="bgContainer bg2 box8">
+            
+        </div>
+        <!--  -->
+        <div class="box red box9">
+            <p class="strong">Javascript</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores sit sint laboriosam iusto saepe perferendis eveniet culpa error placeat, ducimus earum dignissimos rerum quisquam quibusdam voluptates eum animi aliquam quas.</p> <br>
+        </div>
+        <div class="imgContainer box10">
+             <img src="/img/jsLogo.webp" alt="">
+        </div>
+        <div class="box blue box11">
+            <p class="strong">To do liste</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores sit sint laboriosam iusto saepe perferendis eveniet culpa error placeat, ducimus earum dignissimos rerum quisquam quibusdam voluptates eum animi aliquam quas.</p> <br>
+        </div>
+        <div class="bgContainer bg3 box12">
+            
+        </div>
+
+         <!--  -->
+         <div class="box red box13">
+            <p class="strong">Astro</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores sit sint laboriosam iusto saepe perferendis eveniet culpa error placeat, ducimus earum dignissimos rerum quisquam quibusdam voluptates eum animi aliquam quas.</p> <br>
+        </div>
+        <div class="imgContainer box14">
+             <img src="/img/astroLogo.webp" alt="">
+        </div>
+        <div class="box blue box15">
+            <p class="strong">To do liste</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores sit sint laboriosam iusto saepe perferendis eveniet culpa error placeat, ducimus earum dignissimos rerum quisquam quibusdam voluptates eum animi aliquam quas.</p> <br>
+        </div>
+        <div class="bgContainer bg3 box16">
+            
+        </div>
+       
+
+       
+        
+            
+        
+        
+        
+        
+    </div>
+</div>
+
+
+<style>
+    .elementContainer{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        
+    }
+    .elementContainer p{
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    .lang, .project{
+        width: 300px;
+        height: 50px;
+        border: 3px solid black;
+        border-bottom: none;
+    }
+
+
+    .box1{
+        grid-area: box1;
+    }
+    .box2{
+        grid-area: box2;
+    }
+    .box3{
+        grid-area: box3;
+    }
+    .box4{
+        grid-area: box4;
+    }
+    .box5{
+        grid-area: box5;
+    }
+    .box6{
+        grid-area: box6;
+    }
+    .box7{
+        grid-area: box7;
+    }
+    .box8{
+        grid-area: box8;
+    }
+    .box9{
+        grid-area: box9;
+    }
+    .box10{
+        grid-area: box10;
+    }
+    .box11{
+        grid-area: box11;
+    }
+    .box12{
+        grid-area: box12;
+    }
+    .box13{
+        grid-area: box13;
+    }
+    .box14{
+        grid-area: box14;
+    }
+    .box15{
+        grid-area: box15;
+    }
+    .box16{
+        grid-area: box16;
+    }
+   
+     .boxContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-inline: 20px;
+        gap: 10px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "box1" "box2" "box3" "box4" "box5" "box6" "box7" "box8" "box9" "box10" "box11" "box12" "box13" "box14" "box15" "box16"
+    ;
+    }
+
+   
+
+
+
+
+
+
+
+    .imgContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        
+
+    }
+    .boxContainer img{
+        width: auto;
+        height: 60%;
+        aspect-ratio: 1/1;
+        
+    }
+
+   
+    .bg1{
+        background: url("img/likespilletx.webp");
+       
+    }
+    .bg2{
+        background: url("img/jac.webp");
+    }
+    .bg3{
+        
+    }
+    .bgContainer{
+        height: 400px;
+        background-position: right center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+    }
+
+    .box{
+       
+        box-shadow: 2px 2px 17px -5px rgba(0,0,0,1);
+        color: white;
+        padding: 40px;
+        height: 400px;
+        overflow-y: scroll;
+    }
+    .box p{
+        margin-bottom: 15px;
+    }
+    .box a{
+        color: white;
+    }
+    .red{
+        background-color: var(--portRed);
+    }
+    .blue{
+        background-color: var(--portBlue);
+    }
+
+
+   
+    .projektSection{
+        background-color: var(--portGrey);
+        
+    }
+    .projektSection h2{
+        font-size: 2rem;
+        text-align: center;
+        padding-block: 40px;
+    }
+
+   
+    .strong{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    @media (min-width: 700px) {
+        .boxContainer img{
+      
+    }
+        .boxContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "box1 box2"
+        "box4 box3"
+        "box5 box6"
+        "box8 box7"
+        "box9 box10"
+        "box12 box11"
+        "box13 box14"
+        "box16 box15"
+        ;
+        }
+        
+
+    }
+    
+
+    @media (min-width: 1200px) {
+        .boxContainer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "box1 box2  box3 box4"
+        "box6 box5  box8 box7"
+        "box9 box10  box11 box12"
+        "box14 box13  box16 box15"
+        ;
+        }
+        .bgContainer{
+            grid-column: auto;
+            grid-row: auto;
+            
+        }
+    }
+
+</style>

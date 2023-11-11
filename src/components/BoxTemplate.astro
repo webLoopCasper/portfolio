@@ -1,0 +1,25 @@
+---
+const { color, class } = Astro.props
+---
+
+
+<div class:list={ 'box ' + color }>
+    <slot/>
+</div>
+
+
+<style>
+    .box{
+        color: white;
+        padding: 30px;
+        height: 400px;
+    }
+    
+    .red{
+        background-color: var(--portRed);
+    }
+    .blue{
+        background-color: var(--portBlue);
+    }
+    
+</style>

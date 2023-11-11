@@ -1,0 +1,152 @@
+---
+
+---
+
+<div class="introContainer">
+    <div>
+        <div class="headlineContainer">
+            <h1>Hej <span class="hand">&#128075;</span> <br>
+            <span class="casper">Casper Bisgaard</span> her!</h1>
+            <p>Jeg er en 27 årig front-end programmør med en passion for at forme digitale oplevelser. Jeg er klar på nye udfordringer, og søger derfor praktik i perioden den 29/1 til den 5/4. Jeg trives med at lære nyt, og er god til at arbejde selvstændigt! Jeg har en stor interesse for Javascript, samt dertil hørende frameworks og libaries. 
+            </p>
+            <div class="buttonContainer">
+                <button id="projectButton">Se projekter</button>
+                <div class="line"></div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="imageContainer">
+        <img src="img/casperweb.webp" alt="">
+    </div>
+</div>
+
+<script>
+    document.querySelector("#projectButton").addEventListener("click",()=>{
+        document.querySelector(".projectArea").scrollIntoView({ behavior: "smooth"});
+    })
+
+</script>
+
+<style>
+
+
+    .introContainer{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1100px;
+        margin-inline:auto;
+        padding-inline:20px
+    }
+
+    
+    @media (max-width: 800px){
+        .introContainer>div{
+        justify-self: center;
+    }
+    }
+   
+    @media (min-width: 800px) {
+
+       
+        .introContainer{
+        grid-template-columns: 1fr 1fr;
+        
+        }
+        .headlineContainer{
+        margin-top: 150px;
+        }
+        .buttonContainer .line{
+            display: block;
+        }
+    }
+    @media (min-width: 1100px) {
+        :root{
+        font-size: 16px;
+        }
+        .introContainer{
+        grid-template-columns: 2fr 1.5fr;
+        }
+    }
+
+    .headlineContainer{
+        max-width: 500px;
+    }
+
+    .headlineContainer h1{
+        font-size: 2.5rem;
+    }
+
+    .headlineContainer p{
+        margin-top: 40px;
+    }
+
+    .casper{
+        background: linear-gradient(0deg, var(--portYellow) 0%, var(--portYellow) 40%, rgba(0,0,0,0) 40%);
+    }
+
+    .hand{
+        font-size: 3rem;
+    }
+
+    .hand {
+    animation-name: wave-animation; 
+    animation-duration:5.5s;       
+    animation-iteration-count: infinite; 
+    transform-origin: 70% 70%;       
+     display: inline-block; 
+     
+    }
+
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }   
+    5% { transform: rotate(14.0deg) }  
+   10% { transform: rotate(-8.0deg) }
+   15% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-4.0deg) }
+   25% { transform: rotate(10.0deg) }
+   30% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+    .buttonContainer{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .line{
+        height: 2px;
+        background-color: black;
+        flex-grow: 1;
+        margin-inline:30px;
+        display:none;
+    }
+
+    .buttonContainer button{
+        background-color: var(--portYellow);
+        padding: 15px 30px;
+        border:none;
+        border-radius: 15px;
+        font-weight: bold;
+        box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.25);
+    }
+    .buttonContainer button:hover{
+        background-color: var(--portYellowHover);
+        box-shadow: none;
+    }
+
+    .imageContainer{
+        max-width: 450px; 
+        
+    }
+
+    .imageContainer img{
+        position: relative;
+        bottom: -4px;
+    }
+
+
+</style>
