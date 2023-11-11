@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+#screen{
+    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+
+}
+
+#game{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+#start{
+
+    width: 50%;
+    height: 44%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    
+  /* bring your own prefixes */
+  transform: translate(-50%, 0%);
+    
+    background-image: url("svg/startscreen.svg");
+    background-size: contain;
+    margin: 0 auto;
+
+}
+
+.start-inner{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.start-inner div{
+    margin-top: 30px;
+    text-align: center;
+    width: 70%;
+
+}
+#p-inner-start{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    line-height: 200%;
+}
+
+#game_over{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    
+
+}
+#level_complete{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    
+
+}
+#game_background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("svg/background.svg");
+    background-size: cover;
+
+}
+
+#game_elements{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+#game_foreground{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("svg/forground.svg");
+    background-size: cover;
+    pointer-events: none;
+
+}
+
+#game_ui{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#life_board{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+#score_board{
+    position: absolute;
+    top: 18%;
+    left: 3%;
+}
+#time_board{
+    position: absolute;
+    top: 26%;
+    left: 3%;
+}
+#angry_container, #like_container, #likehjerte_container{
+    position:absolute;
+    aspect-ratio: 1/1;
+    width: 6%;
+    
+
+}
+#likehjerte_sprite{
+    background: url("svg/heart.svg");
+}
+
+#angry_sprite{
+    
+    background: url("svg/angry\ smiley.svg");
+}
+
+#like_sprite{
+    background: url("svg/Like.svg");
+}
+
+#startGame{
+    width: 40%;
+    height: 20%;
+    background-color: #0C78F9;
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+.pos1{
+  top: 12vw;
+  left: -10vw;
+}
+
+.pos2{
+    top: 20vw;
+    left: -10vw;
+}
+
+.pos3{
+
+    top: 30vw;
+    left: -10vw;
+
+}
+
+.pos4{
+    top: 40vw;
+    left: -10vw;
+}
+
+.sprite{
+    width: 100%;
+    height: 100%;
+    
+}
+.liv{
+    width: 3vw;
+  
+}
+
+
+.delay{
+    animation-delay: 1s;
+}
+
+
+
+.frys{
+    animation-play-state: paused;
+}
+
+.flyv {
+    animation-name: flyv_kf;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes flyv_kf {
+    0% {
+      transform: translateX(225%);
+    }
+  
+    100% {
+      transform: translateX(1900%);
+    }
+  }
+  .ikke-synlig{
+    display: none;
+  }
+
+  .forsvind {
+    animation-name: forsvind_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes forsvind_kf {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0);
+    }
+  }
+
+
+  

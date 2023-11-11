@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="main-menu">
+        <a href="/index.html">forside</a>
+        <a href="/spil.html">spil</a>
+        <a href="/ide.html">ide</a>
+        <a href="/teknik.html">teknik</a>
+        <a href="/grafik.html">grafik</a>
+        <a href="/assets.html">assets</a>
+    </div> -->
+    
+
+    <div id="screen">
+        <div id="game">
+            <div id="game_background"></div>
+            <div id="game_elements">
+                <div class="">
+                   
+                    <div class=" pos4 delay" id="angry_container">
+                        <div class="sprite"  id="angry_sprite">
+
+                        </div>
+                    </div>
+                    <div class=" pos1" id="like_container">
+                        <div class="sprite" id="like_sprite">
+
+                        </div>
+                    </div>
+
+                    <div class=" pos2" id="likehjerte_container">
+                        <div class="sprite" id="likehjerte_sprite">
+
+                        </div>
+                    </div>
+                    
+
+                    
+                    
+                </div>
+            </div>
+            <div id="game_foreground">
+
+            </div>
+            <div id="game_ui">
+                <div id="score_board">
+                   <p>Dine points: <span id="score"></span></p> 
+                </div>
+                <div id="life_board">
+                    <img src="svg/liv.svg" class="liv" id="liv1" alt="">
+                    <img src="svg/liv.svg" class="liv" id="liv2">
+                    <img src="svg/liv.svg" class="liv" id="liv3">
+                </div>
+                <div id="time_board">
+                    <p>Din tid: <span id="timer"></span></p>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="start">
+            <div class="start-inner">
+                <div class="inner-start-tekst">
+                    <h1 id="h1-inner-start">Er du en rigtig like hunter?</h1>
+                    <p id="p-inner-start">Spillet handler om at samle så mange likes som muligt! Men pas på du må endelig ikke trykke på de sure smileys da dette vil påvirke dit rygte som like hunter.</p>
+                    <button id="startGame">Start</button>
+                </div>
+                
+            </div>
+        </div>
+        <div id="game_over">
+            
+        </div>
+        <div id="level_complete">
+
+        </div>
+    </div>
+    <div>
+        <audio src="sound/Cartoon Balloon Fart 01.wav" id="fart"></audio>
+        <audio src="sound/mixkit-retro-game-notification-212.wav" class="pling"></audio>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
